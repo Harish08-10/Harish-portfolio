@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harish - CyberSec Engineer</title>
+    <meta name="description" content="Portfolio of Harish - Aspiring Cybersecurity Engineer">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&family=Outfit:wght@400;700&family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loading Animation -->
+    <div id="loader" class="loader-wrapper">
+        <div class="cyber-glitch-loader" data-text="INITIALIZING...">INITIALIZING...</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="glass-nav">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <i class="fa-solid fa-shield-halved glow-icon"></i>
+                <span class="logo-text">H<span class="accent">/</span>RISH</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="section fade-in">
+            <div class="hero-content">
+                <p class="greeting">System.out.println("Hello World!");</p>
+                <h1 class="glitch-text" data-text="I'm Harish">I'm Harish</h1>
+                <h2 class="role">Aspiring <span class="highlight">Cybersecurity</span> Engineer</h2>
+                <p class="intro">Securing the digital frontier through automated pipelines, robust infrastructure, and relentless curiosity.</p>
+                <div class="hero-actions">
+                    <a href="#" class="cyber-btn primary">
+                        <i class="fa-solid fa-desktop"></i> Resume Monitor
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="avatar-container">
+                    <div class="neon-ring"></div>
+                    <img src="profile.jpg" alt="Harish Avatar" class="avatar custom-avatar">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section slide-in">
+            <h2 class="section-title"><span>01.</span> About_Me</h2>
+            <div class="about-container glass-card hover-glow">
+                <div class="about-visual">
+                    <div class="avatar-container about-avatar">
+                        <div class="neon-ring"></div>
+                        <img src="profile.jpg" alt="Harish Avatar" class="avatar custom-avatar">
+                    </div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Cybersecurity enthusiast and BE graduate (2026) with a strong interest in SOC operations, threat detection, and digital defense. I've built innovative projects that showcase my critical thinking and problem-solving skills.</p>
+                        <p>A quick learner with an adaptive mindset, I enjoy exploring SIEM, log analysis, and real-world security challenges. I bring creativity, leadership, and a passion for staying ahead of cyber threats.</p>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fa-solid fa-shield-virus skill-icon"></i>
+                            <span>Pen Testing</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-user-secret skill-icon"></i>
+                            <span>SOC Operations</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-robot skill-icon"></i>
+                            <span>QA Automation</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-network-wired skill-icon"></i>
+                            <span>Network Sec</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section slide-in">
+            <h2 class="section-title"><span>02.</span> Executed_Protocols</h2>
+            
+            <div id="projects-container" class="interactive-box-container">
+                <!-- Main Initial Box -->
+                <div id="main-project-box" class="glass-card neon-border hover-pulse cursor-pointer flex-center big-box">
+                    <h3><i class="fa-solid fa-folder-tree"></i> View Projects Repository</h3>
+                    <p>Click to initialize project sequence...</p>
+                </div>
+
+                <!-- Text Transition Wrapper -->
+                <div id="transition-text-box" class="transition-text-hidden">
+                    <h2 id="transition-text" class="glitch-text" data-text=""></h2>
+                </div>
+
+                <!-- Projects Selection View -->
+                <div id="project-selection-view" class="projects-grid hidden">
+                    <!-- Project 1 Selection -->
+                    <div class="project-card glass-card hover-lift cursor-pointer neon-box" id="btn-proj-1">
+                        <div class="project-header">
+                            <i class="fa-regular fa-folder fa-2x folder-icon"></i>
+                        </div>
+                        <h3 class="project-title">Medical Image Anomaly Detection</h3>
+                        <p class="project-desc">AI-based detection ensuring Data Privacy.</p>
+                        <span class="cyber-btn sm w-full" style="text-align: center; margin-top: 15px;">Project 1</span>
+                    </div>
+
+                    <!-- Project 2 Selection -->
+                    <div class="project-card glass-card hover-lift cursor-pointer neon-box" id="btn-proj-2">
+                        <div class="project-header">
+                            <i class="fa-regular fa-folder fa-2x folder-icon"></i>
+                        </div>
+                        <h3 class="project-title">Secure EEG & Medical Report</h3>
+                        <p class="project-desc">Blockchain Authentications based secure storage.</p>
+                        <span class="cyber-btn sm w-full" style="text-align: center; margin-top: 15px;">Project 2</span>
+                    </div>
+                </div>
+
+                <!-- Project Paper Viewer -->
+                <div id="paper-view" class="hidden paper-container fade-in">
+                    <button id="back-to-projects" class="cyber-btn sm mb-20"><i class="fa-solid fa-arrow-left"></i> Return</button>
+                    <div class="iframe-wrapper neon-border" style="box-shadow: 0 0 30px var(--violet-glow); border: 2px solid var(--violet);">
+                        <iframe id="paper-iframe" src="" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="section slide-in">
+            <h2 class="section-title"><span>03.</span> Metrics_&_Trophies</h2>
+            <div class="stats-grid">
+                <div class="stat-box glass-card neon-border">
+                    <i class="fa-solid fa-bug stat-icon"></i>
+                    <h3 class="counter" data-target="150">0</h3>
+                    <p>Vulnerabilities Patched</p>
+                </div>
+                <div class="stat-box glass-card neon-border">
+                    <i class="fa-solid fa-code-commit stat-icon"></i>
+                    <h3 class="counter" data-target="500">0</h3><span class="plus">+</span>
+                    <p>Commits Pushed</p>
+                </div>
+                <div class="stat-box glass-card neon-border">
+                    <i class="fa-solid fa-award stat-icon"></i>
+                    <h3 class="counter" data-target="12">0</h3>
+                    <p>Certifications & CTFs</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Letter Box & Socials Section -->
+        <section id="contact" class="section slide-in">
+            <h2 class="section-title"><span>04.</span> Letter_Box</h2>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info glass-card">
+                    <h3>Init Letter Box Protocol</h3>
+                    <p>Have an idea or just want to share your thoughts directly with me? Drop a message in the letter box and it will securely transmit directly to my phone as an SMS!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>harishhh808010@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>9488874853</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Cyber Space / Remote</span>
+                        </div>
+                    </div>
+
+                    <div class="social-grid">
+                        <a href="https://www.linkedin.com/in/harish-k-997b7a278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Harish08-10" target="_blank" class="social-icon" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/harish___08___?igsh=ZGhzbWdvMHJmcTdp" target="_blank" class="social-icon" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form glass-card" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Alias / Name</label>
+                    </div>
+                    <!-- Email removed for SMS logic -->
+                    <input type="hidden" id="email" value="none@sms.local"> 
+                    <div class="form-group">
+                        <textarea id="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message">Your Thoughts (Message)</label>
+                    </div>
+                    
+                    <button type="submit" class="cyber-btn primary w-full">Deploy Message <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Built with <i class="fa-solid fa-heart" style="color: var(--violet)"></i>, <i class="fa-solid fa-mug-hot"></i> and pure code.</p>
+        <p>&copy; 2026 Harish. Secure by Design.</p>
+    </footer>
+
+    <!-- AI Chatbot UI -->
+    <div class="chatbot-wrapper">
+        <button id="chatbot-toggle" class="pulse-ring">
+            <i class="fa-solid fa-robot"></i>
+        </button>
+        
+        <div class="chat-window glass-card" id="chat-window">
+            <div class="chat-header">
+                <div class="chat-title">
+                    <div class="status-dot"></div>
+                    <span>Mikki - Cyber Assistant 🤖</span>
+                </div>
+                <button id="close-chat"><i class="fa-solid fa-times"></i></button>
+            </div>
+            <div class="chat-body" id="chat-body">
+                <div class="message bot-msg">
+                    <p>Hi! I'm Mikki, Harish's advanced cyber assistant. I have root access to his profile and project matrices. Ask me anything via text or click the mic button!</p>
+                </div>
+            </div>
+            <div class="chat-input-area" style="display: flex; gap: 8px;">
+                <input type="text" id="chat-input" placeholder="Query Mikki..." style="flex-grow: 1;">
+                <button id="mic-btn" class="cyber-btn sm" style="padding: 0 12px; border-radius: 4px;" title="Voice Assistant"><i class="fa-solid fa-microphone"></i></button>
+                <button id="send-msg" class="cyber-btn sm" style="padding: 0 12px; border-radius: 4px;"><i class="fa-solid fa-arrow-turn-up"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
